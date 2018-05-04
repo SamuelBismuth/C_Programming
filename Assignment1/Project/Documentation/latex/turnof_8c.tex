@@ -1,0 +1,51 @@
+\hypertarget{turnof_8c}{}\section{turnof.\+c File Reference}
+\label{turnof_8c}\index{turnof.\+c@{turnof.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}turnof.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sort.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}wronginput.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{turnof_8c_a1693671babc717c4897844fcbf9cefca}{computer\+Play} (int array\mbox{[}3\mbox{]})
+\item 
+bool \hyperlink{turnof_8c_ae7a44a4623ed4333f361e529a1644561}{user\+Play} (int array\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{turnof_8c_a1693671babc717c4897844fcbf9cefca}\label{turnof_8c_a1693671babc717c4897844fcbf9cefca}} 
+\index{turnof.\+c@{turnof.\+c}!computer\+Play@{computer\+Play}}
+\index{computer\+Play@{computer\+Play}!turnof.\+c@{turnof.\+c}}
+\subsubsection{\texorpdfstring{computer\+Play()}{computerPlay()}}
+{\footnotesize\ttfamily void computer\+Play (\begin{DoxyParamCaption}\item[{int}]{array\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+============================================================================ Name \+: \hyperlink{turnof_8c}{turnof.\+c} Author \+: \begin{DoxyAuthor}{Author}
+Samuel Version \+: 1 Copyright \+: public \subsection*{Description \+: Jnim C, Ansi-\/style }
+\end{DoxyAuthor}
+
+
+here we use the secret of the game
+
+If the user know the secret he could win \+: here is an exemple \+: the user choose the numbers \+: 11 7 4 so, by our secret, we\textquotesingle{}re giving the turn to the user (4 + 7 = 11) the the user make the choice 11 to 3, packets size are 7 4 3 computer\textquotesingle{}s turn, by our secret \+: 7 to 1, packets size are 4 3 1 user\textquotesingle{}s turn \+: 4 to 2, packets size are 3 2 1 computer\textquotesingle{}s turn \+: 3 to 1 packets size are 2 1 1 user\textquotesingle{}s turn \+: 2 to 1, packets size are 1 1 1 computer\textquotesingle{}s turn \+: 1 to 0 (there is no another choice to make), packets size are 1 1 0 user\textquotesingle{}s turn \+: 1 to 0, packets size are 1 0 0 the user win !! 
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{turnof_8c_ae7a44a4623ed4333f361e529a1644561}\label{turnof_8c_ae7a44a4623ed4333f361e529a1644561}} 
+\index{turnof.\+c@{turnof.\+c}!user\+Play@{user\+Play}}
+\index{user\+Play@{user\+Play}!turnof.\+c@{turnof.\+c}}
+\subsubsection{\texorpdfstring{user\+Play()}{userPlay()}}
+{\footnotesize\ttfamily bool user\+Play (\begin{DoxyParamCaption}\item[{int}]{array\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+The method ask the user to input the number 
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input is good 
+
+false if the input is wrong 
+\end{DoxyReturn}
